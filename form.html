@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Postage requirements</title>
+</head>
+<body>
+	<h2>Postage Rate Calculator</h2>
+	<form method="get" action="/getRates">
+		Weight(OZ): <input type="number" min="0.00" step=".01" name="weight"><br>
+		Select one of the following: <select name="type" id="type">
+			<option></option>
+			<option>Letters(stamped)</option>
+			<option>Letters(Metered)</option>
+			<option>Large Envelopes(Flats)</option>
+			<option>First-Class Package Service--Retail</option>
+		</select><br>
+		<input type="submit" name="submit" value="submit">
+	</form>
+</body>
+</html>
